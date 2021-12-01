@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-urovo-dt-40" version="0.1.0"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>CordovaPluginUrovoDt40</name>
+	<js-module name="CordovaPluginUrovoDt40" src="www/CordovaPluginUrovoDt40.js">
+		<clobbers target="cordova.plugins.CordovaPluginUrovoDt40" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="CordovaPluginUrovoDt40">
+				<param name="android-package" value="cordova-plugin-urovo-dt-40.CordovaPluginUrovoDt40" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+		<source-file src="src/android/cordovaPluginUrovoDt40.java" target-dir="src/cordova-plugin-urovo-dt-40/CordovaPluginUrovoDt40" />
+		<framework custom="true" src="src/android/urovo-dt40.gradle" type="gradleReference" />
+	</platform>
+</plugin>
